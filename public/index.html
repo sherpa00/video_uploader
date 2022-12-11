@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <h2>
+        Video Gallery
+    </h2>
+    <p id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi quod velit consequuntur quae animi. Quisquam aliquid voluptatum repellendus obcaecati delectus, aliquam modi officiis! Ullam accusantium sed ea quasi minus voluptatum.
+    </p>
+
+    <button id="add">
+        Add Video
+    </button>
+
+    <form id="video-upload">
+        <label for="title">
+            Title
+        </label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="date">
+            Date
+        </label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="description">
+            Description
+        </label>
+        <textarea type="text" id="description" name="description" required ></textarea>
+
+        <label for="video-file">
+            Video
+        </label>
+        <input type="file" id="video-file" name="video-file" accept="video/*" required />
+
+        <button type="submit">
+            Upload Video
+        </button>
+    </form>
+
+    <hr></hr>
+
+    <h3>
+        Video List
+    </h3>
+
+    <div id="video-container">
+        
+    </div>
+
+    <button class="deleteall">
+        Delete All
+    </button>
+
+    <form id="video-update">
+        <h2>
+            Update Your videos
+        </h2>
+        <label for="title1">
+            Title
+        </label>
+        <input type="text" id="title1" name="title1" />
+
+        <label for="date1">
+            Date
+        </label>
+        <input type="date" id="date1" name="date1" />
+
+        <label for="description1">
+            Description
+        </label>
+        <textarea type="text" id="description1" name="description1" ></textarea>
+
+        <label for="video-file1">
+            Video
+        </label>
+        <input type="file" id="video-file1" name="video-file1" accept="video/*" />
+
+        <small>
+            * Leave input fields blank which you do not want to update.
+        </small>
+
+        <button type="submit">
+            Update Video
+        </button>
+
+        <button class="close">
+            Close
+        </button>
+    </form>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
